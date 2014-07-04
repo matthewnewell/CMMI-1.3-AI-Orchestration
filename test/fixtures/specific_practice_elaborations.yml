@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  process_area_id: 1
+  specific_practice_id: 1
+  sp_elaboration: MyText
+
+two:
+  process_area_id: 1
+  specific_practice_id: 1
+  sp_elaboration: MyText

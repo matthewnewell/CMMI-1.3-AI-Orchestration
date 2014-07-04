@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @maturity_level.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= simple_format(@maturity_level.description) %>
+</p>
+
+
+<% @process_areas.each do |process_area| %>
+	<%= link_to process_area.name, process_area %><br>
+<% end %>

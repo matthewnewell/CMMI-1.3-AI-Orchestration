@@ -1,0 +1,2 @@
+module SpecificGoalsHelper
+end

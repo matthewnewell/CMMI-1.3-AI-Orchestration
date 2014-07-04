@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @specific_goal.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @specific_goal.description %>
+</p>
+
+<p>
+  <strong>Process area:</strong>
+  <%= @specific_goal.process_area_id %>
+</p>
+
+<%= link_to 'Edit', edit_specific_goal_path(@specific_goal) %> |
+<%= link_to 'Back', specific_goals_path %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Process area:</strong>
+  <%= @specific_practice_elaboration.process_area_id %>
+</p>
+
+<p>
+  <strong>Specific practice:</strong>
+  <%= @specific_practice_elaboration.specific_practice_id %>
+</p>
+
+<p>
+  <strong>Sp elaboration:</strong>
+  <%= @specific_practice_elaboration.sp_elaboration %>
+</p>
+
+<%= link_to 'Edit', edit_specific_practice_elaboration_path(@specific_practice_elaboration) %> |
+<%= link_to 'Back', specific_practice_elaborations_path %>

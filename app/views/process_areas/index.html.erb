@@ -1,0 +1,22 @@
+<h1>Process Areas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Maturity level</th>
+      <th>Process category</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @process_areas.each do |process_area| %>
+      <tr>
+        <td><%= link_to process_area.name, process_area %></td>
+        <td><%= link_to process_area.maturity_level.name, maturity_levels_path(process_area.maturity_level_id) %></td>
+        <td><%= link_to process_area.process_area_category.name, process_area_category_path(process_area.process_area_category_id) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

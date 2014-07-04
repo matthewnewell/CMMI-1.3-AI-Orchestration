@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  summary: MyText
+  description: MyText
+  process_area_id: 1
+  specific_goal_id: 1
+
+two:
+  name: MyString
+  summary: MyText
+  description: MyText
+  process_area_id: 1
+  specific_goal_id: 1

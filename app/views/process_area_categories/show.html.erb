@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @process_area_category.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @process_area_category.description %>
+</p>
+
+<% @process_areas.each do |process_area| %>
+	<%= link_to process_area.name, process_area %><br>
+<% end %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Process area:</strong>
+  <%= @generic_practice_elaboration.process_area_id %>
+</p>
+
+<p>
+  <strong>Generic practice:</strong>
+  <%= @generic_practice_elaboration.generic_practice_id %>
+</p>
+
+<p>
+  <strong>Gp elaboration:</strong>
+  <%= @generic_practice_elaboration.gp_elaboration %>
+</p>
+
+<%= link_to 'Edit', edit_generic_practice_elaboration_path(@generic_practice_elaboration) %> |
+<%= link_to 'Back', generic_practice_elaborations_path %>

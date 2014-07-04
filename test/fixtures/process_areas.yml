@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  purpose: MyText
+  maturity_level_id: 1
+  process_category_id: 1
+
+two:
+  name: MyString
+  purpose: MyText
+  maturity_level_id: 1
+  process_category_id: 1

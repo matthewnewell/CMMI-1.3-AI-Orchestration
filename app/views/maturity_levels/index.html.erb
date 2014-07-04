@@ -1,0 +1,16 @@
+<h1>Maturity Levels</h1>
+
+<table>
+  <tbody>
+    <% @maturity_levels.each do |maturity_level| %>
+      <tr>
+        <td><strong><%= link_to maturity_level.name, maturity_level %></strong></td>
+      </tr>
+      <tr>
+        <td><%= simple_format(maturity_level.description) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
