@@ -4,11 +4,16 @@
   <tbody>
     <% @process_area_categories.each do |process_area_category| %>
       <tr>
-        <td><strong><%= link_to process_area_category.name, process_area_category %></strong></td>
+        <td><strong><%= process_area_category.name %></strong></td>
       </tr>
       <tr>
         <td><%= process_area_category.description %></td>
       </tr>
+      <% process_area_category.process_areas.each do |process_area| %>
+        <tr>
+          <td><%= link_to process_area.name, process_area_path(process_area) %></td>
+        </tr>
+      <% end %>
     <% end %>
   </tbody>
 </table>

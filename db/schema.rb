@@ -69,7 +69,6 @@ ActiveRecord::Schema.define(version: 20140703170452) do
   end
 
   create_table "specific_practice_elaborations", force: true do |t|
-    t.integer  "process_area_id"
     t.integer  "specific_practice_id"
     t.text     "sp_elaboration"
     t.datetime "created_at"
@@ -80,7 +79,6 @@ ActiveRecord::Schema.define(version: 20140703170452) do
     t.string   "name"
     t.text     "summary"
     t.text     "description"
-    t.integer  "process_area_id"
     t.integer  "specific_goal_id"
     t.datetime "created_at"
     t.datetime "updated_at"

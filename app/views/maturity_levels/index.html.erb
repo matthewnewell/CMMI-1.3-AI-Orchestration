@@ -7,7 +7,7 @@
         <td><strong><%= link_to maturity_level.name, maturity_level %></strong></td>
       </tr>
       <tr>
-        <td><%= simple_format(maturity_level.description) %></td>
+        <td><%= markdown(maturity_level.description) %></td>
       </tr>
     <% end %>
   </tbody>

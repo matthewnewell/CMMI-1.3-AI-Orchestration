@@ -1,16 +1,8 @@
 class ProcessAreaCategoriesController < ApplicationController
-  before_action :set_process_area_category, only: [:show, :edit, :update, :destroy]
+  before_action :set_process_area_category, only: [:show]
 
-  # GET /process_area_categories
-  # GET /process_area_categories.json
   def index
     @process_area_categories = ProcessAreaCategory.all
-  end
-
-  # GET /process_area_categories/1
-  # GET /process_area_categories/1.json
-  def show
-    @process_areas = ProcessArea.where(process_area_category_id: @process_area_category)
   end
 
   private

@@ -1,4 +1,4 @@
-<h1>Listing specific_goals</h1>
+<h1>Specific Goals</h1>
 
 <table>
   <thead>
@@ -6,21 +6,15 @@
       <th>Name</th>
       <th>Description</th>
       <th>Process area</th>
-      <th></th>
-      <th></th>
-      <th></th>
     </tr>
   </thead>
 
   <tbody>
     <% @specific_goals.each do |specific_goal| %>
       <tr>
-        <td><%= specific_goal.name %></td>
+        <td><%= link_to specific_goal.name, specific_goal %></td>
         <td><%= specific_goal.description %></td>
-        <td><%= specific_goal.process_area_id %></td>
-        <td><%= link_to 'Show', specific_goal %></td>
-        <td><%= link_to 'Edit', edit_specific_goal_path(specific_goal) %></td>
-        <td><%= link_to 'Destroy', specific_goal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to specific_goal.process_area.name, process_area_path(specific_goal.process_area_id) %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +22,3 @@
 
 <br>
 
-<%= link_to 'New Specific goal', new_specific_goal_path %>

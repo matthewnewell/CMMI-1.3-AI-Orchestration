@@ -1,14 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+	<%= link_to "Generic Goals", generic_goals_path %> 
+<p>
   <strong>Name:</strong>
   <%= @generic_goal.name %>
 </p>
 
 <p>
   <strong>Description:</strong>
-  <%= @generic_goal.description %>
+  <%= markdown(@generic_goal.description) %>
 </p>
 
-<%= link_to 'Edit', edit_generic_goal_path(@generic_goal) %> |
-<%= link_to 'Back', generic_goals_path %>
+<% @generic_practices.each do |generic_practice| %>
+	<p>
+		<%= link_to generic_practice.name, generic_practice %> 
+	</p>
+<% end %>

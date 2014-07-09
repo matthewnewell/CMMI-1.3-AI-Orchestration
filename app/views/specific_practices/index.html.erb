@@ -1,4 +1,4 @@
-<h1>Listing specific_practices</h1>
+<h1>Specific Practices</h1>
 
 <table>
   <thead>
@@ -8,28 +8,18 @@
       <th>Description</th>
       <th>Process area</th>
       <th>Specific goal</th>
-      <th></th>
-      <th></th>
-      <th></th>
     </tr>
   </thead>
 
   <tbody>
     <% @specific_practices.each do |specific_practice| %>
       <tr>
-        <td><%= specific_practice.name %></td>
+        <td><%= link_to specific_practice.name, specific_practice %></td>
         <td><%= specific_practice.summary %></td>
         <td><%= specific_practice.description %></td>
-        <td><%= specific_practice.process_area_id %></td>
-        <td><%= specific_practice.specific_goal_id %></td>
-        <td><%= link_to 'Show', specific_practice %></td>
-        <td><%= link_to 'Edit', edit_specific_practice_path(specific_practice) %></td>
-        <td><%= link_to 'Destroy', specific_practice, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to specific_practice.specific_goal.process_area.name, process_area_path(specific_practice.specific_goal.process_area_id) %></td>
+        <td><%= link_to specific_practice.specific_goal.name, specific_goal_path(specific_practice.specific_goal_id) %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Specific practice', new_specific_practice_path %>

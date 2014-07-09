@@ -1,13 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<p> <%= link_to "Maturity Level", maturity_levels_path %> </p>
+
   <strong>Name:</strong>
   <%= @maturity_level.name %>
 </p>
 
 <p>
   <strong>Description:</strong>
-  <%= simple_format(@maturity_level.description) %>
+  <%= markdown(@maturity_level.description) %>
 </p>
 
 

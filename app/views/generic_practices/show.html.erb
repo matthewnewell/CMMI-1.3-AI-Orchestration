@@ -1,6 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Generic goal:</strong>
+  <%= link_to @generic_practice.generic_goal.name, generic_goal_path(@generic_practice.generic_goal_id) %>
+</p>
+
+<p> <%= link_to "Generic Practices", generic_practices_path %> </p>
+<p>
   <strong>Name:</strong>
   <%= @generic_practice.name %>
 </p>
@@ -12,13 +18,20 @@
 
 <p>
   <strong>Description:</strong>
-  <%= @generic_practice.description %>
+  <%= markdown(@generic_practice.description) %>
 </p>
 
-<p>
-  <strong>Generic goal:</strong>
-  <%= @generic_practice.generic_goal_id %>
-</p>
+<h3>Generic Practice Elaboration</h3>
 
-<%= link_to 'Edit', edit_generic_practice_path(@generic_practice) %> |
-<%= link_to 'Back', generic_practices_path %>
+<table>
+	<tr>
+		<th>Process Area</th>
+		<th>Elaboration</th>
+	</tr>
+	<tr>
+		<% @generic_practice_elaborations.each do |gpe| %>
+			<td> <%= link_to gpe.process_area.name, process_area_path(gpe.process_area) %> </td>
+			<td> <%= gpe.gp_elaboration %> </td>
+	</tr>
+		<% end %>
+</table>

@@ -1,15 +1,14 @@
 class ProcessAreasController < ApplicationController
-  before_action :set_process_area, only: [:show, :edit, :update, :destroy]
+  before_action :set_process_area, only: [:show]
 
-  # GET /process_areas
-  # GET /process_areas.json
   def index
     @process_areas = ProcessArea.all
   end
 
-  # GET /process_areas/1
-  # GET /process_areas/1.json
   def show
+    @specific_goals = SpecificGoal.where(process_area_id: @process_area)
+    @generic_goals = GenericGoal.all 
+    @generic_practice_elaborations = GenericPracticeElaboration.where(process_area_id: @process_area)
   end
 
   private

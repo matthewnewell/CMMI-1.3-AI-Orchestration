@@ -1,5 +1,16 @@
 <p id="notice"><%= notice %></p>
 
+
+<p>
+  <strong>Process area:</strong>
+  <%= link_to @specific_practice.specific_goal.process_area.name, process_area_path(@specific_practice.specific_goal.process_area) %>
+</p>
+
+<p>
+  <strong>Specific goal:</strong>
+  <%= link_to @specific_practice.specific_goal.name, specific_goal_path(@specific_practice.specific_goal) %>
+</p>
+
 <p>
   <strong>Name:</strong>
   <%= @specific_practice.name %>
@@ -12,18 +23,7 @@
 
 <p>
   <strong>Description:</strong>
-  <%= @specific_practice.description %>
+  <%= markdown(@specific_practice.description) %>
 </p>
 
-<p>
-  <strong>Process area:</strong>
-  <%= @specific_practice.process_area_id %>
-</p>
 
-<p>
-  <strong>Specific goal:</strong>
-  <%= @specific_practice.specific_goal_id %>
-</p>
-
-<%= link_to 'Edit', edit_specific_practice_path(@specific_practice) %> |
-<%= link_to 'Back', specific_practices_path %>
