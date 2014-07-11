@@ -2,10 +2,13 @@ class GenericGoalsController < ApplicationController
   before_action :set_generic_goal, only: [:show]
 
   def index
+    add_breadcrumb "Generic Goals"
     @generic_goals = GenericGoal.all
   end
 
   def show
+    add_breadcrumb "Generic Goals", generic_goals_path 
+    add_breadcrumb @generic_goal.name
     @generic_practices = GenericPractice.where(generic_goal_id: @generic_goal )
   end
 

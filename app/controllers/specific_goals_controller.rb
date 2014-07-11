@@ -1,11 +1,10 @@
 class SpecificGoalsController < ApplicationController
   before_action :set_specific_goal, only: [:show]
 
-  def index
-    @specific_goals = SpecificGoal.all
-  end
-
   def show
+    add_breadcrumb "Process Areas", process_areas_path
+    add_breadcrumb @specific_goal.process_area.name, process_area_path(@specific_goal.process_area)
+    add_breadcrumb @specific_goal.name
   end
 
   private

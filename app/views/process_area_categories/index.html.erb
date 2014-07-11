@@ -1,20 +1,32 @@
-<h1>Process Area Categories</h1>
 
-<table>
-  <tbody>
-    <% @process_area_categories.each do |process_area_category| %>
-      <tr>
-        <td><strong><%= process_area_category.name %></strong></td>
-      </tr>
-      <tr>
-        <td><%= process_area_category.description %></td>
-      </tr>
-      <% process_area_category.process_areas.each do |process_area| %>
-        <tr>
-          <td><%= link_to process_area.name, process_area_path(process_area) %></td>
-        </tr>
-      <% end %>
-    <% end %>
-  </tbody>
-</table>
+<% @process_area_categories.each do |process_area_category| %>
+  <div class="row">
+    <div class="col-md-11">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <%= process_area_category.name %>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-1">
+              <%= process_area_category.description %>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <h4 class="text-center">
+                  <%= link_to "Process Areas", process_areas_path %>
+                </h4>
+                <ul>
+                  <% process_area_category.process_areas.each do |process_area| %>
+                    <li><%= link_to process_area.name, process_area_path(process_area) %></li>
+                  <% end %>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
 

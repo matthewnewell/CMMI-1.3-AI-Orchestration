@@ -48,3 +48,4 @@ gem "twitter-bootstrap-rails"
 gem 'bootstrap-sass'
 
 gem 'redcarpet'
+#gem 'breadcrumbs_on_rails'

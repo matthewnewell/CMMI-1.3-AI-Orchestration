@@ -1,16 +1,20 @@
-<h1>Maturity Levels</h1>
+<div class="row">
+  <div class="col-md-10">
 
-<table>
-  <tbody>
+
     <% @maturity_levels.each do |maturity_level| %>
-      <tr>
-        <td><strong><%= link_to maturity_level.name, maturity_level %></strong></td>
-      </tr>
-      <tr>
-        <td><%= markdown(maturity_level.description) %></td>
-      </tr>
+      <div class="panel panel-primary">
+        <div class="panel-heading" >
+          <strong> <%= link_to maturity_level.name, maturity_level, {:style=>'color:#FFFFFF;'} %> </strong>
+        </div>
+        <div class="panel-body">
+          <%= truncate(maturity_level.description, length: 1000, separator: ' ') {link_to "continued", maturity_level} %>
+        </div>
+      </div>
     <% end %>
-  </tbody>
-</table>
+
+  </div>
+</div>
+
 
 

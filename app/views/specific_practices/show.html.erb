@@ -1,29 +1,11 @@
-<p id="notice"><%= notice %></p>
-
-
-<p>
-  <strong>Process area:</strong>
-  <%= link_to @specific_practice.specific_goal.process_area.name, process_area_path(@specific_practice.specific_goal.process_area) %>
-</p>
-
-<p>
-  <strong>Specific goal:</strong>
-  <%= link_to @specific_practice.specific_goal.name, specific_goal_path(@specific_practice.specific_goal) %>
-</p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @specific_practice.name %>
-</p>
-
-<p>
-  <strong>Summary:</strong>
-  <%= @specific_practice.summary %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= markdown(@specific_practice.description) %>
-</p>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <%= @specific_practice.name %><br>
+    <%= @specific_practice.summary %>
+  </div>
+  <div class="panel-body">
+    <%= markdown(@specific_practice.description) %>
+  </div>
+</div>
 
 

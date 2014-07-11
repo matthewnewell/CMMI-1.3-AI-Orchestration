@@ -1,19 +1,17 @@
-<p id="notice"><%= notice %></p>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+  	<%= @specific_goal.name %>  <br>
+    <%= markdown(@specific_goal.description) %> 
+  </div>
+  <div class="panel-body">
+    <% @specific_goal.specific_practices.each do |specific_practice| %>
+      <p> 
+        <%= link_to specific_practice.name, specific_practice_path(specific_practice)%> 
+      </p>
+    <% end %>
+  </div>
+</div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @specific_goal.name %>
-</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= markdown(@specific_goal.description) %>
-</p>
 
-<p>
-  <strong>Process area:</strong>
-  <%= @specific_goal.process_area_id %>
-</p>
-
-<%= link_to 'Edit', edit_specific_goal_path(@specific_goal) %> |
-<%= link_to 'Back', specific_goals_path %>
+  

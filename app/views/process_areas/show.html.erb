@@ -1,60 +1,94 @@
-<p id="notice"><%= notice %></p>
-
-<p> <%= link_to "Process Areas",process_areas_path %> </p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @process_area.name %>
-</p>
-
-<p>
-  <strong>Purpose:</strong>
-  <%= @process_area.purpose %>
-</p>
-
-<p>
-  <strong>Maturity level:</strong>
-  <%= link_to @process_area.maturity_level.name, maturity_level_path(@process_area.maturity_level_id) %>
-</p>
-
-<p>
-  <strong>Process category:</strong>
-  <%= link_to @process_area.process_area_category.name, process_area_category_path(@process_area_category_id) %>
-</p>
-
-<h3>Process Area Goals and Practices</h3>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+  	<div class="row">
+      <div class="col-md-8">
+  		<%= @process_area.name %>
+  	  </div>
+  	  <div class="col-md-2">
+  		Maturity Level
+  	  </div>
+  	  <div class="col-md-2">
+  		Process Category
+  	  </div>
+  	</div>
+  </div>
+  <div class="panel-body">
+  	<div class="row">
+      <div class="col-md-8">
+  		<%= @process_area.purpose %>
+  	  </div>
+  	  <div class="col-md-2">
+  		<%= link_to @process_area.maturity_level.name, maturity_level_path(@process_area.maturity_level_id) %>
+  	  </div>
+  	  <div class="col-md-2">
+  		<%= link_to @process_area.process_area_category.name, process_area_category_path(@process_area_category_id) %>
+  	  </div>
+  	</div>
+  </div>
+</div>
 
 <% @specific_goals.each do |specific_goal| %>
-	<h4>
-		Specific Goal: <%= specific_goal.name %>
-	</h4>
-	<table>
-		<th>Specific Practice</th>
-		<th>Summary</th>
-		<th>Description</th>
-		<% specific_goal.specific_practices.each do |specific_practice| %>
-			<tr>
-				<td> <%= link_to markdown(specific_practice.name), specific_practice_path(specific_practice) %> </td>
-				<td> <%= markdown(specific_practice.summary) %> </td>
-				<td> <%= markdown(specific_practice.description) %> </td>
-			</tr>
-		<% end %> 
-	</table>
-<% end %> 
-
-<% @generic_goals.each do |generic_goal| %>
-	<h4> Generic Goal: <%= generic_goal.name %> </h4>
-	<table>
-		<% generic_goal.generic_practices.each do |generic_practice| %>
-			<th>Generic Practice</th>
-			<th>Process Area Elaboration</th>
-			<tr> 
-				<td><%= generic_practice.name %></td>
-				<% @generic_practice_elaborations.where(generic_practice_id: generic_practice.id).each do |gp_elaboration|  %> 
-					<td><%= markdown(gp_elaboration.gp_elaboration) %></td>
-				<% end %>
-			</tr>
-		<% end %>
-	</table> 
+  <div class="panel panel-primary">
+  	<div class="panel-heading">
+  	  Specific Goal <%= specific_goal.name %>
+  	</div>
+  	<div class="panel-body">
+  	  <div class="table">
+  	  	<table>
+	  	  <thead>
+  	  	    <tr>
+  	  	      <th>Specific Practice</th>
+	  	  	<tr>
+	  	  </thead>
+	  	  <tbody>
+	  	  	<% specific_goal.specific_practices.each do |specific_practice| %>
+		  	  <tr>
+		  	    <td>
+		  	      <%= link_to markdown(specific_practice.name), specific_practice_path(specific_practice) %>
+		  	    </td>
+		  	    <td>
+		  	      <%= markdown(specific_practice.summary) %>
+		  	    </td>
+		  	  </tr>
+		    <% end %>
+	  	  </tbody>
+	  	</table>
+	  </div>
+	</div>
+  </div>
 <% end %>
 
+
+<% @generic_goals.each do |generic_goal| %>
+  <div class="panel panel-primary">
+  	<div class="panel-heading">
+  	  Generic Goal <%= generic_goal.name %>
+  	</div>
+  	<div class="panel-body">
+  	  <div class="table">
+  	  	<table>
+	  	  <thead>
+  	  	    <tr>
+  	  	      <th>Generic Practice</th>
+	  	  	  <th><%= @process_area.name %> Elaboration</th>
+	  	  	<tr>
+	  	  </thead>
+	  	  <tbody>
+	  	  	<% generic_goal.generic_practices.each do |generic_practice| %>
+		  	  <tr>
+		  	    <td>
+		  	      <%= link_to generic_practice.name, generic_practice_path(generic_practice) %>
+		  	    </td>
+		  	    <td>
+		  	      <% @generic_practice_elaborations.where(generic_practice_id: generic_practice.id).each do |gp_elaboration|  %>
+		  	        <%= markdown(gp_elaboration.gp_elaboration) %>
+		  	      <% end %>
+		  	    </td>
+		  	  </tr>
+		    <% end %>
+	  	  </tbody>
+	  	</table>
+	  </div>
+	</div>
+  </div>
+<% end %>

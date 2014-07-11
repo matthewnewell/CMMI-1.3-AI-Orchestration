@@ -1,17 +1,28 @@
 <p id="notice"><%= notice %></p>
 
-<p> <%= link_to "Maturity Level", maturity_levels_path %> </p>
+<div class="row">
+  <div class="col-md-11">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+    	  Maturity Level <%= @maturity_level.name %>
+      </div>
+      <div class="panel-body">
+        <div class="col-md-8">
+          <%= markdown(@maturity_level.description) %>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center">
+            <%= link_to "Process Areas", process_areas_path %>
+          </h4>
+          <ul>
+            <% @process_areas.each do |process_area| %>
+              <li><%= link_to process_area.name, process_area %></li>
+            <% end %>
+          </ul>
+        </div>    	
+      </div>
+    </div>
+  </div>
 
-  <strong>Name:</strong>
-  <%= @maturity_level.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= markdown(@maturity_level.description) %>
-</p>
 
 
-<% @process_areas.each do |process_area| %>
-	<%= link_to process_area.name, process_area %><br>
-<% end %>

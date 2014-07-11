@@ -1,28 +1,37 @@
-<h1>Process Areas</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Maturity level</th>
-      <th>Process category</th>
-    </tr>
-  </thead>
-
-  <tbody>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    A process area is a cluster of related practices in an area that, when implemented collectively, satisfies a set of goals considered important for making improvement in that area. 
+  </div>
+</div>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-1">
+        Name
+      </div>
+      <div class="col-md-3">
+        Maturity Level
+      </div>
+      <div class="col-md-2">
+        Process Category
+      </div>
+    </div>
+  </div>
+  <div class="panel-body">
     <% @process_areas.each do |process_area| %>
-      <tr>
-        <td>
+      <div class="row">
+        <div class="col-md-4 col-md-offset-1">
           <%= link_to process_area.name, process_area %>
-        </td>
-        <td>
+        </div>
+        <div class="col-md-3">
           <%= link_to process_area.maturity_level.name, maturity_level_path(process_area.maturity_level_id) %>
-        </td>
-        <td>
-          <%= link_to process_area.process_area_category.name, process_area_category_path(process_area.process_area_category_id) %>
-        </td>
-      </tr>
+        </div>
+        <div class="col-md-2">
+          <%= link_to process_area.process_area_category.name, process_area_categories_path %>
+        </div>
+      </div>
     <% end %>
-  </tbody>
-</table>
+  </div>
+</div>
 

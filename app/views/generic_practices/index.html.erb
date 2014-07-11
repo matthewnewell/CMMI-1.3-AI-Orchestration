@@ -1,20 +1,26 @@
-<h1>Generic Practices</h1>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    The generic practices are also organized in numerical order under the generic goal they support.
+  </div>
+  <div class="panel-body">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Summary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @generic_practices.each do |generic_practice| %>
+          <tr>
+            <td><%= link_to generic_practice.name, generic_practice %></td>
+            <td><%= markdown(generic_practice.summary) %></td>
+          </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Summary</th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @generic_practices.each do |generic_practice| %>
-      <tr>
-        <td><%= link_to generic_practice.name, generic_practice %></td>
-        <td><%= markdown(generic_practice.summary) %></td>
-      </td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>

@@ -1,11 +1,11 @@
 class SpecificPracticesController < ApplicationController
   before_action :set_specific_practice, only: [:show]
 
-  def index
-    @specific_practices = SpecificPractice.all
-  end
-
   def show
+    add_breadcrumb "Process Areas", process_areas_path
+    add_breadcrumb @specific_practice.specific_goal.process_area.name, process_area_path(@specific_practice.specific_goal.process_area)
+    add_breadcrumb @specific_practice.specific_goal.name, specific_goal_path(@specific_practice.specific_goal)
+    add_breadcrumb @specific_practice.name
   end
 
   private

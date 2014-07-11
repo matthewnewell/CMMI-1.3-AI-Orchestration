@@ -938,7 +938,7 @@ Process performance models are used to estimate or predict the value of a proces
 		summary: "Establish and maintain the environment needed to support the integration of the product components.", 
 		description: 'The environment for product integration can either be acquired or developed. To establish an environment, requirements for the purchase or development of equipment, software, or other resources will need to be developed. These requirements are gathered when implementing the processes associated with the Requirements Development process area. The product integration environment can include the reuse of existing organizational resources. The decision to acquire or develop the product integration environment is addressed in the processes associated with the Technical Solution process area. 
 
-		The environment required at each step of the product integration process can include test equipment, simulators (taking the place of unavailable product components), pieces of real equipment, and recording devices.', 
+	The environment required at each step of the product integration process can include test equipment, simulators (taking the place of unavailable product components), pieces of real equipment, and recording devices.', 
 		specific_goal_id: 21 },
 	{ id: 77,  name: "SP 1.3: Establish Product Integration Procedures and Criteria", 
 		summary: "Establish and maintain procedures and criteria for integration of the product components.", 
@@ -2082,144 +2082,144 @@ Certain verification methods can require special tools, equipment, facilities, a
 		gp_elaboration:  "Examples of training topics include the following: Quality management methods (e.g., root cause analysis)" },
 	{ id: 71,  process_area_id: 1,  generic_practice_id: 6, 
 		gp_elaboration:  "Examples of training topics include the following:  
-	* Roles, responsibilities, and authority of the configuration management staff 
-	* Configuration management standards, procedures, and methods 
-	* Configuration library system" },
+		* Roles, responsibilities, and authority of the configuration management staff 
+		* Configuration management standards, procedures, and methods 
+		* Configuration library system" },
 	{ id: 72,  process_area_id: 8,  generic_practice_id: 6, 
 		gp_elaboration:  "Examples of training topics include the following: 
-	* Formal decision analysis 
-	* Methods for evaluating alternative solutions against criteria" }, 
+		* Formal decision analysis 
+		* Methods for evaluating alternative solutions against criteria" }, 
 	{ id: 73,  process_area_id: 9,  generic_practice_id: 6, 
 		gp_elaboration:  "Examples of training topics include the following: 
-	* Tailoring the organization’s set of standard processes to meet the needs of the project 
-	* Managing the project based on the project’s defined process 
-	* Using the organization’s measurement repository 
-	* Using the organizational process assets 
-	* Integrated management 
-	* Intergroup coordination 
-	* Group problem solving" }, 
+		* Tailoring the organization’s set of standard processes to meet the needs of the project 
+		* Managing the project based on the project’s defined process 
+		* Using the organization’s measurement repository 
+		* Using the organizational process assets 
+		* Integrated management 
+		* Intergroup coordination 
+		* Group problem solving" }, 
 	{ id: 74,  process_area_id: 2,  generic_practice_id: 6, 
 		gp_elaboration:  "Examples of training topics include the following: 
-	* Statistical techniques 
-	* Data collection, analysis, and reporting processes 
-	* Development of goal related measurements (e.g., Goal Question Metric)" }, 
+		* Statistical techniques 
+		* Data collection, analysis, and reporting processes 
+		* Development of goal related measurements (e.g., Goal Question Metric)" }, 
 	{ id: 75,  process_area_id: 10, generic_practice_id: 6, 
 		gp_elaboration:  "Examples of training topics include the following: 
-	* CMMI and other process and process improvement reference models 
-	* Planning, managing, and monitoring processes 
-	* Process modeling and definition 
-	* Developing a tailorable standard process 
-	* Developing work environment standards 
-	* Ergonomics" }, 
+		* CMMI and other process and process improvement reference models 
+		* Planning, managing, and monitoring processes 
+		* Process modeling and definition 
+		* Developing a tailorable standard process 
+		* Developing work environment standards 
+		* Ergonomics" }, 
 	{ id: 76,  process_area_id: 11, generic_practice_id: 6, 
 		gp_elaboration:  "Examples of training topics include the following: 
-	* CMMI and other process improvement reference models 
-	* Planning and managing process improvement 
-	* Tools, methods, and analysis techniques 
-	* Process modeling 
-	* Facilitation techniques 
-	* Change management" }, 
+		* CMMI and other process improvement reference models 
+		* Planning and managing process improvement 
+		* Tools, methods, and analysis techniques 
+		* Process modeling 
+		* Facilitation techniques 
+		* Change management" }, 
 	{ id: 77,  process_area_id: 22, generic_practice_id: 6, 
 		gp_elaboration:  "Examples of training topics include the following: 
-	* Cost benefit analysis 
-	* Planning, designing, and conducting pilots 
-	* Technology transition 
-	* Change management" },
+		* Cost benefit analysis 
+		* Planning, designing, and conducting pilots 
+		* Technology transition 
+		* Change management" },
 	{ id: 78,  process_area_id: 19, generic_practice_id: 6, 
 		gp_elaboration:  "Examples of training topics include the following: 
-	* Process and process improvement modeling 
-	* Statistical and other quantitative methods (e.g., estimating models, Pareto analysis, control charts)" },
+		* Process and process improvement modeling 
+		* Statistical and other quantitative methods (e.g., estimating models, Pareto analysis, control charts)" },
 	{ id: 79,  process_area_id: 12, generic_practice_id: 6, 
 		gp_elaboration:  "Examples of training topics include the following: 
-	* Knowledge and skills needs analysis 
-	* Instructional design 
-	* Instructional techniques (e.g., train the trainer) 
-	* Refresher training on subject matter" },
+		* Knowledge and skills needs analysis 
+		* Instructional design 
+		* Instructional techniques (e.g., train the trainer) 
+		* Refresher training on subject matter" },
 	{ id: 80,  process_area_id: 13, generic_practice_id: 6, 
 		gp_elaboration:  "Examples of training topics include the following: 
-	* Application domain 
-	* Product integration procedures and criteria 
-	* Organization’s facilities for integration and assembly 
-	* Assembly methods 
-	* Packaging standards" },
+		* Application domain 
+		* Product integration procedures and criteria 
+		* Organization’s facilities for integration and assembly 
+		* Assembly methods 
+		* Packaging standards" },
 	{ id: 81,  process_area_id: 3,  generic_practice_id: 6, 
 		gp_elaboration:  "Examples of training topics include the following: 
-	* Monitoring and control of projects 
-	* Risk management 
-	* Data management" },
+		* Monitoring and control of projects 
+		* Risk management 
+		* Data management" },
 	{ id: 82,  process_area_id: 4,  generic_practice_id: 6, 
 		gp_elaboration:  "Examples of training topics include the following: 
-	* Estimating 
-	* Budgeting 
-	* Negotiating 
-	* Identifying and analyzing risks 
-	* Managing data 
-	* Planning 
-	* Scheduling" },
+		* Estimating 
+		* Budgeting 
+		* Negotiating 
+		* Identifying and analyzing risks 
+		* Managing data 
+		* Planning 
+		* Scheduling" },
 	{ id: 83,  process_area_id: 5,  generic_practice_id: 6, 
 		gp_elaboration:  "Examples of training topics include the following: 
-	* Application domain 
-	* Customer relations 
-	* Process descriptions, standards, procedures, and methods for the project 
-	* Quality assurance objectives, process descriptions, standards, procedures, methods, and tools" },
+		* Application domain 
+		* Customer relations 
+		* Process descriptions, standards, procedures, and methods for the project 
+		* Quality assurance objectives, process descriptions, standards, procedures, methods, and tools" },
 	{ id: 84,  process_area_id: 20, generic_practice_id: 6, 
 		gp_elaboration:  "Examples of training topics include the following: 
-	* Basic quantitative (including statistical) analyses that help in analyzing process performance, using historical data, and identifying when corrective action is warranted 
-	* Process modeling and analysis 
-	* Process measurement data selection, definition, and collection" },
+		* Basic quantitative (including statistical) analyses that help in analyzing process performance, using historical data, and identifying when corrective action is warranted 
+		* Process modeling and analysis 
+		* Process measurement data selection, definition, and collection" },
 	{ id: 85,  process_area_id: 14, generic_practice_id: 6, 
 		gp_elaboration:  "Examples of training topics include the following: 
-	* Application domain 
-	* Requirements definition and analysis 
-	* Requirements elicitation 
-	* Requirements specification and modeling 
-	* Requirements tracking" },
+		* Application domain 
+		* Requirements definition and analysis 
+		* Requirements elicitation 
+		* Requirements specification and modeling 
+		* Requirements tracking" },
 	{ id: 86,  process_area_id: 6,  generic_practice_id: 6, 
 		gp_elaboration:  "Examples of training topics include the following: 
-	* Application domain 
-	* Requirements definition, analysis, review, and management 
-	* Requirements management tools 
-	* Configuration management 
-	* Negotiation and conflict resolution" },
+		* Application domain 
+		* Requirements definition, analysis, review, and management 
+		* Requirements management tools 
+		* Configuration management 
+		* Negotiation and conflict resolution" },
 	{ id: 87,  process_area_id: 15, generic_practice_id: 6, 
 		gp_elaboration:  "Examples of training topics include the following: 
-	* Risk management concepts and activities (e.g., risk identification, evaluation, monitoring, mitigation) 
-	* Measure selection for risk mitigation" },
+		* Risk management concepts and activities (e.g., risk identification, evaluation, monitoring, mitigation) 
+		* Measure selection for risk mitigation" },
 	{ id: 88,  process_area_id: 7,  generic_practice_id: 6, 
 		gp_elaboration:  "Examples of training topics include the following: 
-	* Regulations and business practices related to negotiating and working with suppliers 
-	* Acquisition planning and preparation 
-	* Commercial off-the-shelf products acquisition 
-	* Supplier evaluation and selection 
-	* Negotiation and conflict resolution 
-	* Supplier management 
-	* Testing and transition of acquired products 
-	* Receiving, storing, using, and maintaining acquired products" },
+		* Regulations and business practices related to negotiating and working with suppliers 
+		* Acquisition planning and preparation 
+		* Commercial off-the-shelf products acquisition 
+		* Supplier evaluation and selection 
+		* Negotiation and conflict resolution 
+		* Supplier management 
+		* Testing and transition of acquired products 
+		* Receiving, storing, using, and maintaining acquired products" },
 	{ id: 89,  process_area_id: 16, generic_practice_id: 6, 
 		gp_elaboration:  "Examples of training topics include the following: 
-	* Application domain of the product and product components 
-	* Design methods 
-	* Architecture methods 
-	* Interface design 
-	* Unit testing techniques 
-	* Standards (e.g., product, safety, human factors, environmental)" },
+		* Application domain of the product and product components 
+		* Design methods 
+		* Architecture methods 
+		* Interface design 
+		* Unit testing techniques 
+		* Standards (e.g., product, safety, human factors, environmental)" },
 	{ id: 90,  process_area_id: 17, generic_practice_id: 6, 
 		gp_elaboration:  "Examples of training topics include the following: 
-	* Application domain 
-	* Validation principles, standards, and methods 
-	* Intended-use environment" },
+		* Application domain 
+		* Validation principles, standards, and methods 
+		* Intended-use environment" },
 	{ id: 91,  process_area_id: 18, generic_practice_id: 6, 
 		gp_elaboration:  "Examples of training topics include the following: 
-	* Application or service domain 
-	* Verification principles, standards, and methods (e.g., analysis, demonstration, inspection, test) 
-	* Verification tools and facilities 
-	* Peer review preparation and procedures 
-	* Meeting facilitation" },
+		* Application or service domain 
+		* Verification principles, standards, and methods (e.g., analysis, demonstration, inspection, test) 
+		* Verification tools and facilities 
+		* Peer review preparation and procedures 
+		* Meeting facilitation" },
 	{ id: 92,  process_area_id: 21, generic_practice_id: 7, 
 		gp_elaboration:  "Examples of work products placed under control include the following: 
-	* Action proposals 
-	* Action plans 
-	* Causal analysis and resolution records" },
+		* Action proposals 
+		* Action plans 
+		* Causal analysis and resolution records" },
 	{ id: 93,  process_area_id: 1,  generic_practice_id: 7, 
 		gp_elaboration:  "Examples of work products placed under control include the following: 
 	* Access lists 

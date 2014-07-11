@@ -2,10 +2,13 @@ class ProcessAreasController < ApplicationController
   before_action :set_process_area, only: [:show]
 
   def index
+    add_breadcrumb "Process Areas"
     @process_areas = ProcessArea.all
   end
 
   def show
+    add_breadcrumb "Process Areas", process_areas_path
+    add_breadcrumb @process_area.name
     @specific_goals = SpecificGoal.where(process_area_id: @process_area)
     @generic_goals = GenericGoal.all 
     @generic_practice_elaborations = GenericPracticeElaboration.where(process_area_id: @process_area)

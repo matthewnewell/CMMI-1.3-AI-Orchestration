@@ -1,15 +1,14 @@
-<h1>Generic Goals</h1>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    Generic Goals <br> The generic goals are organized in numerical order, GG 1 through GG 3. The generic practices are also organized in numerical order under the generic goal they support.
+  </div>
+  <div class="panel-body">
 
-<table>
-  <tbody>
-    <% @generic_goals.each do |generic_goal| %>
-      <tr>
-        <td><%= link_to generic_goal.name, generic_goal %></td>
-      </tr>
-      <tr>
-        <td><%= markdown(generic_goal.description) %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+        <% @generic_goals.each do |generic_goal| %>
+          <%= link_to generic_goal.name, generic_goal %>
+          <%= markdown(generic_goal.description) %>
+        <% end %>
+
+  </div>
+</div>
 
