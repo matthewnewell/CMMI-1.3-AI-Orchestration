@@ -1,24 +1,36 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @generic_practice.name %>
-</p>
+<div class="panel panel-primary">
+	<div class="panel-heading">
+  		<%= @generic_practice.name %>:
+  		<br>
+  		<%= @generic_practice.summary %>
+  	</div>
+  	<div class="panel-body">
+  		<%= markdown(@generic_practice.description) %>
+  	</div>
+</div>
 
-<p>
-  <strong>Summary:</strong>
-  <%= @generic_practice.summary %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @generic_practice.description %>
-</p>
-
-<p>
-  <strong>Generic goal:</strong>
-  <%= @generic_practice.generic_goal_id %>
-</p>
-
-<%= link_to 'Edit', edit_generic_practice_path(@generic_practice) %> |
-<%= link_to 'Back', generic_practices_path %>
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		Generic Practice Elaborations
+	</div>
+	<div class="panel-body">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Process Area</th>
+					<th>Elaboration</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<% @generic_practice_elaborations.each do |gpe| %>
+						<td> <%= link_to gpe.process_area.name, process_area_path(gpe.process_area) %> </td>
+						<td> <%= gpe.gp_elaboration %> </td>
+				</tr>
+					<% end %>
+			</tbody>
+		</table>
+	</div>
+</div>

@@ -1,33 +1,26 @@
-<h1>Listing generic_practices</h1>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    The generic practices are also organized in numerical order under the generic goal they support.
+  </div>
+  <div class="panel-body">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Summary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @generic_practices.each do |generic_practice| %>
+          <tr>
+            <td><%= link_to generic_practice.name, generic_practice %></td>
+            <td><%= markdown(generic_practice.summary) %></td>
+          </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Summary</th>
-      <th>Description</th>
-      <th>Generic goal</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @generic_practices.each do |generic_practice| %>
-      <tr>
-        <td><%= generic_practice.name %></td>
-        <td><%= generic_practice.summary %></td>
-        <td><%= generic_practice.description %></td>
-        <td><%= generic_practice.generic_goal_id %></td>
-        <td><%= link_to 'Show', generic_practice %></td>
-        <td><%= link_to 'Edit', edit_generic_practice_path(generic_practice) %></td>
-        <td><%= link_to 'Destroy', generic_practice, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Generic practice', new_generic_practice_path %>

@@ -1,29 +1,14 @@
-<h1>Listing generic_goals</h1>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    Generic Goals <br> The generic goals are organized in numerical order, GG 1 through GG 3. The generic practices are also organized in numerical order under the generic goal they support.
+  </div>
+  <div class="panel-body">
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+        <% @generic_goals.each do |generic_goal| %>
+          <%= link_to generic_goal.name, generic_goal %>
+          <%= markdown(generic_goal.description) %>
+        <% end %>
 
-  <tbody>
-    <% @generic_goals.each do |generic_goal| %>
-      <tr>
-        <td><%= generic_goal.name %></td>
-        <td><%= generic_goal.description %></td>
-        <td><%= link_to 'Show', generic_goal %></td>
-        <td><%= link_to 'Edit', edit_generic_goal_path(generic_goal) %></td>
-        <td><%= link_to 'Destroy', generic_goal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  </div>
+</div>
 
-<br>
-
-<%= link_to 'New Generic goal', new_generic_goal_path %>

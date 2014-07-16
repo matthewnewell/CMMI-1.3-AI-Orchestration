@@ -1,15 +1,14 @@
 class MaturityLevelsController < ApplicationController
-  before_action :set_maturity_level, only: [:show, :edit, :update, :destroy]
+  before_action :set_maturity_level, only: [:show]
 
-  # GET /maturity_levels
-  # GET /maturity_levels.json
   def index
+    add_breadcrumb "Maturity Levels"
     @maturity_levels = MaturityLevel.all
   end
 
-  # GET /maturity_levels/1
-  # GET /maturity_levels/1.json
   def show
+    add_breadcrumb "Maturity Levels", maturity_levels_path
+    add_breadcrumb @maturity_level.name
     @process_areas = ProcessArea.where(maturity_level_id: @maturity_level)
   end
 
