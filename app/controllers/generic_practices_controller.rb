@@ -3,14 +3,12 @@ class GenericPracticesController < ApplicationController
 
 
   def index
-    add_breadcrumb "Home", root_path
     add_breadcrumb "Generic Goals", generic_goals_path 
     add_breadcrumb "Generic Practices"
     @generic_practices = GenericPractice.all
   end
  
   def show
-    add_breadcrumb "Home", root_path
     add_breadcrumb "Generic Goals", generic_goals_path 
     add_breadcrumb "Generic Practices", generic_practices_path
     add_breadcrumb @generic_practice.name

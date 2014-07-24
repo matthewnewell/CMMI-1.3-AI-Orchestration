@@ -10,8 +10,9 @@
 	</head>
 	<body>
 		<%= render 'layouts/header' %>
-		<%= render_breadcrumbs %>
+		
 		<div class="container">
+			<%= render_breadcrumbs %>
 			<%= yield %>
 			<%= render 'layouts/footer' %>
 		</div>
