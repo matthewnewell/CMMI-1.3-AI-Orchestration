@@ -2,6 +2,7 @@ class ProcessAreaCategoriesController < ApplicationController
   before_action :set_process_area_category, only: [:show]
 
   def index
+    add_breadcrumb "Home", root_path
     add_breadcrumb "Process Areas", process_areas_path
     add_breadcrumb "Process Area Categories"
     @process_area_categories = ProcessAreaCategory.all

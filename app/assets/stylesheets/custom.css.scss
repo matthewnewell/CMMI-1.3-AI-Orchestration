@@ -58,9 +58,13 @@ h2 {
   font-size: 1.2em;
   letter-spacing: -1px;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: left;
   font-weight: normal;
   color: $gray-light;
+}
+
+h5 {
+  text-align: left;
 }
 
 p {

@@ -19,5 +19,12 @@ Betterstrongerfaster::Application.routes.draw do
 
   root to: 'static_pages#home'
   match '/about',   to: 'static_pages#about',   via: 'get'
-  match '/contact', to: 'static_pages#contact', via: 'get'
+  match '/home', to: 'static_pages#home', via: 'get'
+  match '/introduction', to: 'static_pages#introduction', via: 'get'
+  match '/process_area_components', to: 'static_pages#process_area_components', via: 'get'
+  match '/tying_it_all_together', to: 'static_pages#tying_it_all_together', via: 'get'
+  match '/relationships_among_process_areas', to: 'static_pages#relationships_among_process_areas', via: 'get'
+  match '/using_cmmi_models', to: 'static_pages#using_cmmi_models', via: 'get'
+
 end
+

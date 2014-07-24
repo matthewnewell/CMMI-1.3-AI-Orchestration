@@ -2,11 +2,14 @@ class MaturityLevelsController < ApplicationController
   before_action :set_maturity_level, only: [:show]
 
   def index
+    add_breadcrumb "Home", root_path
+    add_breadcrumb "Tying It All Together", tying_it_all_together_path
     add_breadcrumb "Maturity Levels"
     @maturity_levels = MaturityLevel.all
   end
 
   def show
+    add_breadcrumb "Home", root_path
     add_breadcrumb "Maturity Levels", maturity_levels_path
     add_breadcrumb @maturity_level.name
     @process_areas = ProcessArea.where(maturity_level_id: @maturity_level)
