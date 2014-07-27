@@ -1,0 +1,308 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+	<h4>Tying It All Together</h4> 
+  </div>
+  <div class="panel-body">
+  	<p>
+      Now that you have been introduced to the components of CMMI models, you need to understand how they fit together to meet your process improvement needs. 
+    </p>
+
+  	<p>
+      CMMI-DEV does not specify that a project or organization must follow a particular process flow or that a certain number of products be developed per day or specific performance targets be achieved. The model does specify that a project or organization should have processes that address development related practices. To determine whether these processes are in place, a project or organization maps its processes to the process areas in this model.
+    </p>
+    <p>
+      The mapping of processes to process areas enables the organization to track its progress against the CMMI-DEV model as it updates or creates processes. Do not expect that every CMMI-DEV process area will map one to one with your organization’s or project’s processes.
+    </p>
+  </div>
+</div>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+	 <h4>Understanding Levels</h4>
+  </div>
+  <div class="panel-body">
+    <p>
+      <%= link_to "Levels", maturity_levels_path %> are used in CMMI-DEV to describe an evolutionary path recommended for an organization that wants to improve the processes it uses to develop products or services. Levels can also be the outcome of the rating activity in appraisals.  Appraisals can apply to entire organizations or to smaller groups such as a group of projects or a division.
+    </p>
+    <p>
+      CMMI supports two improvement paths using levels. One path enables organizations to incrementally improve processes corresponding to an individual process area (or group of process areas) selected by the organization. The other path enables organizations to improve a set of related processes by incrementally addressing successive sets of process areas.
+    </p>
+    <p>
+      These two improvement paths are associated with the two types of levels: capability levels and maturity levels. These levels correspond to two approaches to process improvement called “representations.” The two representations are called “continuous” and “staged.” Using the continuous representation enables you to achieve “capability levels.” Using the staged representation enables you to achieve “maturity levels.”
+    </p>
+    <p>
+      To reach a particular level, an organization must satisfy all of the goals of the process area or set of process areas that are targeted for improvement, regardless of whether it is a capability or a maturity level.
+    </p>
+    <p>
+      Both representations provide ways to improve your processes to achieve business objectives, and both provide the same essential content and use the same model components.
+    </p>
+  </div>
+</div>
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+   <h4>Structures of the Continuous and Staged Representations</h4>
+  </div>
+  <div class="panel-body">
+    <p>
+      The differences between the structures are subtle but significant. The staged representation uses maturity levels to characterize the overall state of the organization’s processes relative to the model as a whole, whereas the continuous representation uses capability levels to characterize the state of the organization’s processes relative to an individual process area.
+    </p>
+    <p>
+      What may strike you as you compare these two representations is their similarity. Both have many of the same components (e.g., process areas, specific goals, specific practices), and these components have the same hierarchy and configuration.
+    </p>
+    <p>
+      What is not readily apparent from the high-level view in Figure 3.1 is that the continuous representation focuses on process area capability as measured by capability levels and the staged representation focuses on overall maturity as measured by maturity levels. This dimension (the capability/maturity dimension) of CMMI is used for benchmarking and appraisal activities, as well as guiding an organization’s improvement efforts.
+    </p>
+    <p>
+      Capability levels apply to an organization’s process improvement achievement in individual process areas. These levels are a means for incrementally improving the processes corresponding to a given process area. The four capability levels are numbered 0 through 3.
+    </p>
+    <p>
+      Maturity levels apply to an organization’s process improvement achievement across multiple process areas. These levels are a means of improving the processes corresponding to a given set of process areas (i.e., maturity level). The five maturity levels are numbered 1 through 5.
+    </p>
+    <p>
+      The following table compares the four capability levels to the five maturity levels. Notice that the names of two of the levels are the same in both representations (i.e., Managed and Defined). The differences are that there is no maturity level 0; there are no capability levels 4 and 5; and at level 1, the names used for capability level 1 and maturity level 1 are different.
+    </p>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Level</th>
+          <th>Continuous Representation Capability Levels</th>
+          <th>Staged Representation Maturity Levels</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Level 0</td>
+          <td>Incomplete</td>
+          <td class="active"></td>
+        </tr>
+        <td>Level 1</td>
+          <td>Performed</td>
+          <td>Initial</td>
+        </tr>
+        <td>Level 2</td>
+          <td>Managed</td>
+          <td>Managed</td>
+        </tr>
+        <td>Level 3</td>
+          <td>Defined</td>
+          <td>Defined</td>
+        </tr>
+        <td>Level 4</td>
+          <td class="active"></td>
+          <td>Quantitatively Managed</td>
+        </tr>
+        <td>Level 5</td>
+          <td class="active"></td>
+          <td>Optimizing</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      The continuous representation is concerned with selecting both a particular process area to improve and the desired capability level for that process area. In this context, whether a process is performed or incomplete is important. Therefore, the name “Incomplete” is given to the continuous representation starting point.
+    </p>
+    <p>
+      The staged representation is concerned with selecting multiple process areas to improve within a maturity level; whether individual processes are performed or incomplete is not the primary focus. Therefore, the name “Initial” is given to the staged representation starting point.
+    </p>
+    <p>
+      Both capability levels and maturity levels provide a way to improve the processes of an organization and measure how well organizations can and do improve their processes. However, the associated approach to process improvement is different.
+    </p>
+  </div>
+</div>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+   <h4>Understanding Capability Levels</h4>
+  </div>
+  <div class="panel-body">
+    <p>
+      To support those who use the continuous representation, all CMMI models reflect capability levels in their design and content.
+    </p>
+    <p>
+      The four capability levels, each a layer in the foundation for ongoing process improvement, are designated by the numbers 0 through 3:
+        <ol>0.  Incomplete</ol>
+        <ol>1.  Performed</ol>
+        <ol>2.  Managed</ol>
+        <ol>3.  Defined</ol>
+    </p>
+    <p>
+      A capability level for a process area is achieved when all of the generic goals are satisfied up to that level. The fact that capability levels 2 and 3 use the same terms as generic goals 2 and 3 is intentional because each of these generic goals and practices reflects the meaning of the capability levels of the goals and practices. 
+    </p>
+    <h4>Capability Level 0: Incomplete</h4>
+    <p>
+      An incomplete process is a process that either is not performed or is partially performed. One or more of the specific goals of the process area are not satisfied and no generic goals exist for this level since there is no reason to institutionalize a partially performed process.
+    </p>
+    <h4>Capability Level 1: Performed</h4>
+      <p>
+        A capability level 1 process is characterized as a performed process. A performed process is a process that accomplishes the needed work to produce work products; the specific goals of the process area are satisfied.
+      </p>
+      <p>
+        Although capability level 1 results in important improvements, those improvements can be lost over time if they are not institutionalized. The application of institutionalization (the CMMI generic practices at capability levels 2 and 3) helps to ensure that improvements are maintained.
+      </p>
+    <h4>Capability Level 2: Managed</h4>
+      <p>
+        A capability level 2 process is characterized as a managed process. A managed process is a performed process that is planned and executed in accordance with policy; employs skilled people having adequate resources to produce controlled outputs; involves relevant stakeholders; is monitored, controlled, and reviewed; and is evaluated for adherence to its process description.
+      </p>
+      <p>
+        The process discipline reflected by capability level 2 helps to ensure that existing practices are retained during times of stress.
+      </p>
+    <h4>Capability Level 3: Defined</h4>
+      <p>
+        A capability level 3 process is characterized as a defined process. A defined process is a managed process that is tailored from the organization’s set of standard processes according to the organization’s tailoring guidelines; has a maintained process description; and contributes process related experiences to the organizational process assets.
+      </p>
+      <p>
+        A critical distinction between capability levels 2 and 3 is the scope of standards, process descriptions, and procedures. At capability level 2, the standards, process descriptions, and procedures can be quite different in each specific instance of the process (e.g., on a particular project). At capability level 3, the standards, process descriptions, and procedures for a project are tailored from the organization’s set of standard processes to suit a particular project or organizational unit and therefore are more consistent, except for the differences allowed by the tailoring guidelines.
+      </p>
+      <p>
+        Another critical distinction is that at capability level 3 processes are typically described more rigorously than at capability level 2. A defined process clearly states the purpose, inputs, entry criteria, activities, roles, measures, verification steps, outputs, and exit criteria. At capability level 3, processes are managed more proactively using an understanding of the interrelationships of the process activities and detailed measures of the process and its work products.
+      </p>
+  </div>
+</div>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+   <h4>Advancing Through Capability Levels</h4>
+  </div>
+  <div class="panel-body">
+    <p>
+      The capability levels of a process area are achieved through the application of generic practices or suitable alternatives to the processes associated with that process area.
+    </p>
+    <p>
+      Reaching capability level 1 for a process area is equivalent to saying that the processes associated with that process area are performed processes.
+    </p>
+    <p>
+      Reaching capability level 2 for a process area is equivalent to saying that there is a policy that indicates you will perform the process. There is a plan for performing it, resources are provided, responsibilities are assigned, training to perform it is provided, selected work products related to performing the process are controlled, and so on. In other words, a capability level 2 process can be planned and monitored just like any project or support activity.
+    </p>
+    <p>
+      Reaching capability level 3 for a process area is equivalent to saying that an organizational standard process exists associated with that process area, which can be tailored to the needs of the project. The processes in the organization are now more consistently defined and applied because they are based on organizational standard processes.
+    </p>
+    <p>
+      After an organization has reached capability level 3 in the process areas it has selected for improvement, it can continue its improvement journey by addressing high maturity process areas (Organizational Process Performance, Quantitative Project Management, Causal Analysis and Resolution, and Organizational Performance Management).
+    </p>
+    <p>
+      The high maturity process areas focus on improving the performance of those processes already implemented. The high maturity process areas describe the use of statistical and other quantitative techniques to improve organizational and project processes to better achieve business objectives.
+    </p>
+    <p>
+      When continuing its improvement journey in this way, an organization can derive the most benefit by first selecting the OPP and QPM process areas, and bringing those process areas to capability levels 1, 2, and 3. In doing so, projects and organizations align the selection and analyses of processes more closely with their business objectives.
+    </p>
+    <p>
+      After the organization attains capability level 3 in the OPP and QPM process areas, the organization can continue its improvement path by selecting the CAR and OPM process areas. In doing so, the organization analyzes the business performance using statistical and other quantitative techniques to determine performance shortfalls, and identifies and deploys process and technology improvements that contribute to meeting quality and process performance objectives. Projects and the organization use causal analysis to identify and resolve issues affecting performance and promote the dissemination of best practices.
+    </p>
+  </div>
+</div>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+   <h4>Understanding Maturity Levels</h4>
+  </div>
+  <div class="panel-body">
+    <p>
+      To support those who use the staged representation, all CMMI models reflect maturity levels in their design and content. A maturity level consists of related specific and generic practices for a predefined set of process areas that improve the organization’s overall performance.
+    </p>
+    <p>
+      The maturity level of an organization provides a way to characterize its performance. Experience has shown that organizations do their best when they focus their process improvement efforts on a manageable number of process areas at a time and that those areas require increasing sophistication as the organization improves.
+    </p>
+    <p>
+      A maturity level is a defined evolutionary plateau for organizational process improvement. Each maturity level matures an important subset of the organization’s processes, preparing it to move to the next maturity level. The maturity levels are measured by the achievement of the specific and generic goals associated with each predefined set of process areas.
+    </p>
+    <p>
+      The <%= link_to "five maturity levels", maturity_levels_path %>, each a layer in the foundation for ongoing process improvement, are designated by the numbers 1 through 5:
+        <ol>1.  Initial</ol>
+        <ol>2.  Managed</ol>
+        <ol>3.  Defined</ol>
+        <ol>4.  Quantitatively Managed</ol>
+        <ol>5.  Optimizing</ol>
+    </p>
+    <p>
+      Remember that maturity levels 2 and 3 use the same terms as capability levels 2 and 3. This consistency of terminology was intentional because the concepts of maturity levels and capability levels are complementary. Maturity levels are used to characterize organizational improvement relative to a set of process areas, and capability levels characterize organizational improvement relative to an individual process area.
+    </p>
+    <h4>Advancing Through Maturity Levels</h4>
+    <p>
+      Organizations can achieve progressive improvements in their maturity by achieving control first at the project level and continuing to the most advanced level—organization-wide performance management and continuous process improvement—using both qualitative and quantitative data to make decisions.
+    </p>
+    <p>
+      Since improved organizational maturity is associated with improvement in the range of expected results that can be achieved by an organization, maturity is one way of predicting general outcomes of the organization’s next project. For instance, at maturity level 2, the organization has been elevated from ad hoc to disciplined by establishing sound project management. As the organization achieves generic and specific goals for the set of process areas in a maturity level, it increases its organizational maturity and reaps the benefits of process improvement. Because each maturity level forms a necessary foundation for the next level, trying to skip maturity levels is usually counterproductive.
+    </p>
+    <p>
+      At the same time, recognize that process improvement efforts should focus on the needs of the organization in the context of its business environment and that process areas at higher maturity levels can address the current and future needs of an organization or project.
+    </p>
+    <p>
+      For example, organizations seeking to move from maturity level 1 to maturity level 2 are frequently encouraged to establish a process group, which is addressed by the Organizational Process Focus process area at maturity level 3. Although a process group is not a necessary characteristic of a maturity level 2 organization, it can be a useful part of the organization’s approach to achieving maturity level 2.
+    </p>
+    <p>
+      This situation is sometimes characterized as establishing a maturity level 1 process group to bootstrap the maturity level 1 organization to maturity level 2. Maturity level 1 process improvement activities may depend primarily on the insight and competence of the process group until an infrastructure to support more disciplined and widespread improvement is in place.
+    </p>
+    <p>
+      Organizations can institute process improvements anytime they choose, even before they are prepared to advance to the maturity level at which the specific practice is recommended. In such situations, however, organizations should understand that the success of these improvements is at risk because the foundation for their successful institutionalization has not been completed. Processes without the proper foundation can fail at the point they are needed most—under stress.
+    </p>
+    <p>
+      A defined process that is characteristic of a maturity level 3 organization can be placed at great risk if maturity level 2 management practices are deficient. For example, management may commit to a poorly planned schedule or fail to control changes to baselined requirements. Similarly, many organizations prematurely collect the detailed data characteristic of maturity level 4 only to find the data uninterpretable because of inconsistencies in processes and measurement definitions.
+    </p>
+    <p>
+      Another example of using processes associated with higher maturity level process areas is in the building of products. Certainly, we would expect maturity level 1 organizations to perform requirements analysis, design, product integration, and verification. However, these activities are not described until maturity level 3, where they are defined as coherent, well-integrated engineering processes. The maturity level 3 engineering process complements a maturing project management capability put in place so that the engineering improvements are not lost by an ad hoc management process.
+    </p>
+  </div>
+</div>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+   <h4>Equivalent Staging</h4>
+  </div>
+  <div class="panel-body">
+    <p>
+      Equivalent staging is a way to compare results from using the continuous representation to results from using the staged representation. In essence, if you measure improvement relative to selected process areas using capability levels in the continuous representation, how do you translate that work into maturity levels? Is this translation possible?
+    </p>
+    <p>
+      Up to this point, we have not discussed process appraisals in much detail. The SCAMPISM method  is used to appraise organizations using CMMI, and one result of an appraisal is a rating [SEI 2011a, Ahern 2005]. If the continuous representation is used for an appraisal, the rating is a “capability level profile.” If the staged representation is used for an appraisal, the rating is a “maturity level rating” (e.g., maturity level 3).
+    </p>
+    <p>
+      A capability level profile is a list of process areas and the corresponding capability level achieved for each. This profile enables an organization to track its capability level by process area. The profile is called an “achievement profile” when it represents the organization’s actual progress for each process area. Alternatively, the profile is called a “target profile” when it represents the organization’s planned process improvement objectives.
+    </p>
+    <p>
+      Figure 3.3 illustrates a combined target and achievement profile. The gray portion of each bar represents what has been achieved. The unshaded portion represents what remains to be accomplished to meet the target profile.
+    </p>
+    <p>
+      An achievement profile, when compared with a target profile, enables an organization to plan and track its progress for each selected process area. Maintaining capability level profiles is advisable when using the continuous representation.
+    </p>
+    <p>
+      Target staging is a sequence of target profiles that describes the path of process improvement to be followed by the organization. When building target profiles, the organization should pay attention to the dependencies between generic practices and process areas. If a generic practice depends on a process area, either to carry out the generic practice or to provide a prerequisite work product, the generic practice can be much less effective when the process area is not implemented. 
+    </p>
+    <p>
+      Although the reasons to use the continuous representation are many, ratings consisting of capability level profiles are limited in their ability to provide organizations with a way to generally compare themselves with other organizations. Capability level profiles can be used if each organization selects the same process areas; however, maturity levels have been used to compare organizations for years and already provide predefined sets of process areas.
+    </p>
+    <p>
+      Because of this situation, equivalent staging was created. Equivalent staging enables an organization using the continuous representation to convert a capability level profile to the associated maturity level rating.
+    </p>
+    <p>
+      The most effective way to depict equivalent staging is to provide a sequence of target profiles, each of which is equivalent to a maturity level rating of the staged representation reflected in the process areas listed in the target profile. The result is a target staging that is equivalent to the maturity levels of the staged representation.
+    </p>
+    <p>
+      Figure 3.4 shows a summary of the target profiles that must be achieved when using the continuous representation to be equivalent to maturity levels 2 through 5. Each shaded area in the capability level columns represents a target profile that is equivalent to a maturity level.
+    </p>
+
+
+    <p>
+      The following rules summarize equivalent staging:
+        <ol>• To achieve maturity level 2, all process areas assigned to maturity level 2 must achieve capability level 2 or 3.<ol>
+        <ol>• To achieve maturity level 3, all process areas assigned to maturity levels 2 and 3 must achieve capability level 3.<ol>
+        <ol>• To achieve maturity level 4, all process areas assigned to maturity levels 2, 3, and 4 must achieve capability level 3.<ol>
+        <ol>• To achieve maturity level 5, all process areas must achieve capability level 3.<ol>
+    </p>
+  </div>
+</div>
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+   <h4>Achieving High Maturity</h4>
+  </div>
+  <div class="panel-body">
+    <p>
+      When using the staged representation, you attain high maturity when you achieve maturity level 4 or 5. Achieving maturity level 4 involves implementing all process areas for maturity levels 2, 3, and 4. Likewise, achieving maturity level 5 involves implementing all process areas for maturity levels 2, 3, 4, and 5.
+    </p>
+    <p>
+      When using the continuous representation, you attain high maturity using the equivalent staging concept. High maturity that is equivalent to staged maturity level 4 using equivalent staging is attained when you achieve capability level 3 for all process areas except for Organizational Performance Management (OPM) and Causal Analysis and Resolution (CAR). High maturity that is equivalent to staged maturity level 5 using equivalent staging is attained when you achieve capability level 3 for all process areas.
+    </p>
+  </div>
+</div>

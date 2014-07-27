@@ -2,6 +2,7 @@ class MaturityLevelsController < ApplicationController
   before_action :set_maturity_level, only: [:show]
 
   def index
+    add_breadcrumb "Tying It All Together", tying_it_all_together_path
     add_breadcrumb "Maturity Levels"
     @maturity_levels = MaturityLevel.all
   end

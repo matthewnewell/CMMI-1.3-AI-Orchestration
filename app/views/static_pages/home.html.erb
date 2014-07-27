@@ -1,7 +1,74 @@
 <div class="center hero-unit">
-	<h2>Interactive <%= link_to "CMMI", process_areas_path %> for Development, Version 1.3</h2>
+	<h2>In its research to help organizations to develop and maintain quality products and services, the <%= link_to "Software Engineering Institute (SEI)", "http://www.sei.cmu.edu" %> has found several dimensions that an organization can focus on to improve its business. The three critical dimensions that organizations typically focus on: people, procedures and methods, and tools and equipment.</h2>
+  
+  <insert_d3></insert_d3>
+   <h3>The Three Critical Dimensions</h3>
+  <h5> 
+    What holds everything together? It is the <%= link_to "processes", process_areas_path %> used in your organization. Processes allow you to align the way you do business. They allow you to address scalability and provide a way to incorporate knowledge of how to do things better. Processes allow you to leverage your resources and to examine business trends. <br>
+
+    This is not to say that people and technology are not important. We are living in a world where technology is changing at an incredible speed. Similarly, people typically work for many companies throughout their careers. We live in a dynamic world. A focus on process provides the infrastructure and stability necessary to deal with an ever-changing world and to maximize the productivity of people and the use of technology to be competitive. <br>
+
+    Manufacturing has long recognized the importance of process effectiveness and efficiency. Today, many organizations in manufacturing and service industries recognize the importance of quality processes. Process helps an organization’s workforce to meet business objectives by helping them to work smarter, not harder, and with improved consistency. Effective processes also provide a vehicle for introducing and using new technology in a way that best meets the business objectives of the organization.
+  </h5>
 </div>
 
-<%= link_to image_tag("bsf.JPG", height: '70', width: '70', alt: "We can rebuild him. We have the technology. We can make him better than he was. Better, stronger, faster."), about_path %>
+<script type="text/javascript">
+  var w = 600;
+  var h = 400;
+
+  var svg = d3.select("insert_d3")
+    .append("svg")
+    .attr("width", w)
+    .attr("height", h);
+
+  var court=svg.append("rect")
+      .attr("x", 0)
+      .attr("y", 0)
+      .attr("width", w)
+      .attr("height", h)
+      .attr("fill", "grey");
+
+  var courtcircle=svg.append("circle")
+    .attr("cx", 300)
+    .attr("cy", 200)
+    .attr("r", 100)
+    .attr("class", "pumpkin");
+
+  var text=svg.append("text")
+    .attr("x", 240)
+    .attr("y", 195)
+    .attr("font-family", "sans-serif")
+    .attr("font-size", "25")
+    .attr("fill", "black")
+    .text("PROCESS");
+
+  var text=svg.append("text")
+    .attr("x", 190)
+    .attr("y", 80)
+    .attr("font-family", "sans-serif")
+    .attr("font-size", "20")
+    .attr("fill", "black")
+    .text("Procedures and Methods");
+
+  var text=svg.append("text")
+    .attr("x", 150)
+    .attr("y", 300)
+    .attr("font-family", "sans-serif")
+    .attr("font-size", "20")
+    .attr("fill", "black")
+    .text("People");
+
+  var text=svg.append("text")
+    .attr("x", 370)
+    .attr("y", 300)
+    .attr("font-family", "sans-serif")
+    .attr("font-size", "20")
+    .attr("fill", "black")
+    .text("Tools and equipment");
+
+  </script>
+
+
+
 
 
