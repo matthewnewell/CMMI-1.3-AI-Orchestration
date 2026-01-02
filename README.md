@@ -1,6 +1,6 @@
-# BetterStrongerFasterCheaper (BSFC)  
+# BetterStrongerFasterCheaper
 
-*"Gentlemen, we can rebuild it. We have the technology. We have the capability to make the world's first bionic Rails architecture."*  
+*"Gentlemen, we can rebuild it. We have the technology."*  
 
 **BetterStrongerFasterCheaper** is a Ruby on Rails reference implementation designed to demonstrate CMMI model framework. **CMMI Version 1.3 Staged Representation** was the last good CMMI model IMO. I built this app around 2015 with the help of some very talented and kind members of [Indy Hackers](https://www.indyhackers.org/) community. 
 
@@ -25,7 +25,4 @@
 * **Rails:** 6.1  
 * **Database:** PostgreSQL  
 
-### Installation  
-1. **Clone the bionic lab:**  
-   ```bash  
-   git clone [https://github.com/username/betterstrongerfastercheaper.git](https://github.com/username/betterstrongerfastercheaper.git)
+
