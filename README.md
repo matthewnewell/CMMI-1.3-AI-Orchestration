@@ -1,10 +1,8 @@
 # CMMI-1.3-AI-Orchestration
 
-*"Gentlemen, we can rebuild it. We have the technology."*  
-
 This project is a fusion of rigorous systems engineering and modern Agentic AI. It begins with a return to the fundamentals of CMMI v1.3—a model I learned at [TRW](https://en.wikipedia.org/wiki/TRW_Inc.). 
 
-The CMMI is sort of a dead model. I might pivot over to IEEE 15288 and PMBOK.  Not sure yet.
+The CMMI is a dead model. I might pivot over to IEEE 15288 and PMBOK.  Not sure yet.
 
 ## The Vision
 Develop specialized AI Agents for each CMMI Process Area (PA). These agents will actively orchestrate the software lifecycle—from "Requirements Management" agents that validate traceability, to "Project Planning" agents that manage estimation. It is a shift from static compliance to dynamic, AI-driven process execution.
