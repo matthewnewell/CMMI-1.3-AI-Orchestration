@@ -1,12 +1,19 @@
-# BetterStrongerFasterCheaper
+# CMMI-1.3-AI-Orchestration
 
 *"Gentlemen, we can rebuild it. We have the technology."*  
 
-**BetterStrongerFasterCheaper** is a Ruby on Rails reference implementation designed to demonstrate CMMI model framework. **CMMI Version 1.3 Staged Representation** was the last good CMMI model IMO. I built this app around 2015 with the help of some very talented and kind members of [Indy Hackers](https://www.indyhackers.org/) community. 
+This project is a fusion of rigorous systems engineering and modern Agentic AI. It begins with a return to the fundamentals of CMMI v1.3—a model I learned at [TRW](https://en.wikipedia.org/wiki/TRW_Inc.). 
+
+The CMMI is sort of a dead model. I might pivot over to IEEE 15288 and PMBOK.  Not sure yet.
+
+## The Vision
+Develop specialized AI Agents for each CMMI Process Area (PA). These agents will actively orchestrate the software lifecycle—from "Requirements Management" agents that validate traceability, to "Project Planning" agents that manage estimation. It is a shift from static compliance to dynamic, AI-driven process execution.
+
+Refactor the original Ruby on Rails CMMI implementation into a Python stack to serve as the backbone for a Multi-Agent System (MAS). 
 
 ---
 
-## 📈 The CMMI Maturity Model (CMMI v1.3 Inspired)  
+## 📈 The CMMI Maturity Model (CMMI v1.3)  
 
 | Level | Focus | Rails Implementation |  
 | :--- | :--- | :--- |  
@@ -17,12 +24,5 @@
 | **5. Optimizing** | Continuous Improvement | Automated refactoring; proactive decoupling of legacy concerns. |  
 
 ---
-
-## 🚀 Getting Started  
-
-### Prerequisites  
-* **Ruby:** 2.7+  
-* **Rails:** 6.1  
-* **Database:** PostgreSQL  
 
 
