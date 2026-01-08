@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+<ol class="breadcrumb">
+    <li><a href="{{ url_for('main.home') }}">Home</a></li>
+    <li><a href="{{ url_for('main.process_areas') }}">Process Areas</a></li>
+    <li class="active">{{ result.name }}</li>
+</ol>
+
+<div class="page-header">
+    <h1>{{ result.name }} <small>Maturity Level {{ result.maturity_level.id }}</small></h1>
+</div>
+
+<h3>Purpose</h3>
+<div class="well">
+    {{ result.purpose }}
+</div>
+
+<h3>Specific Goals</h3>
+{% if result.specific_goals.count() > 0 %}
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    {% for sg in result.specific_goals %}
+    <div class="panel panel-info">
+        <div class="panel-heading" role="tab" id="heading{{ sg.id }}">
+            <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{ sg.id }}"
+                    aria-expanded="False" aria-controls="collapse{{ sg.id }}">
+                    {{ sg.name }}
+                </a>
+            </h4>
+        </div>
+        <div id="collapse{{ sg.id }}" class="panel-collapse collapse" role="tabpanel"
+            aria-labelledby="heading{{ sg.id }}">
+            <div class="panel-body">
+                <p><strong>Description:</strong> {{ sg.description }}</p>
+
+                <h5>Specific Practices:</h5>
+                <ul>
+                    {% for sp in sg.specific_practices %}
+                    <li>
+                        <strong>{{ sp.name }}</strong>
+                        <p>{{ sp.summary }}</p>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% else %}
+<p>No Specific Goals found.</p>
+{% endif %}
+
+<h3>Generic Goals</h3>
+<p><em>Generic Goals apply to all Process Areas. (Implementation Pending)</em></p>
+
+{% endblock %}
