@@ -3,3 +3,6 @@ Flask-SQLAlchemy
 Flask-Migrate
 Flask-Bootstrap
 python-dotenv
+pytest
+pytest-flask
+coverage

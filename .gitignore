@@ -14,4 +14,19 @@
 /log/*.log
 /tmp/*
 
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+venv/
+.pytest_cache/
 
+# Flask
+instance/
+.webassets-cache
+
+# Database
+*.db
+*.sqlite3
