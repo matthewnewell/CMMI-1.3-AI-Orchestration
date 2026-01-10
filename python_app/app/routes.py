@@ -1,5 +1,6 @@
-from flask import Blueprint, render_template
-from app.models import MaturityLevel
+import os
+import markdown
+from flask import Blueprint, render_template, current_app
 
 bp = Blueprint('main', __name__)
 
@@ -8,13 +9,31 @@ bp = Blueprint('main', __name__)
 def home():
     return render_template('static_pages/home.html')
 
-@bp.route('/about')
-def about():
-    return render_template('static_pages/about.html')
+@bp.route('/about_this_project')
+def about_this_project():
+    # Assume README is in the repo root, which is one level up from python_app
+    # app is in python_app/app
+    
+    # Construct path to README.md
+    # We assume the app is running from python_app directory
+    # So README is at ../README.md
+    
+    readme_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'README.md'))
+    
+    content = ""
+    try:
+        with open(readme_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+    except Exception as e:
+        content = f"Error interpreting README.md: {e}"
 
-@bp.route('/introduction')
-def introduction():
-    return render_template('static_pages/introduction.html')
+    html_content = markdown.markdown(content)
+    return render_template('static_pages/about_this_project.html', readme_content=html_content)
+
+@bp.route('/about_cmmi')
+def about_cmmi():
+    return render_template('static_pages/about_cmmi.html')
+
 
 @bp.route('/maturity_levels')
 def maturity_levels():

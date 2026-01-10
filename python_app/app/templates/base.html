@@ -18,18 +18,7 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="{{ url_for('main.home') }}">Home</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-            aria-expanded="false">CMMI Structures <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="{{ url_for('main.maturity_levels') }}">Maturity Levels</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="{{ url_for('main.process_areas') }}">Process Areas</a></li>
-          </ul>
-        </li>
-        <li><a href="{{ url_for('main.introduction') }}">Introduction</a></li>
-        <li><a href="{{ url_for('main.about') }}">About</a></li>
+        <!-- Navigation cleared as requested -->
       </ul>
     </div>
   </div>
@@ -47,5 +36,16 @@
   {% endwith %}
 
   {% block app_content %}{% endblock %}
+
+  <hr>
+  <footer>
+    <div class="container">
+      <p class="text-muted text-center">
+        <a href="{{ url_for('main.about_this_project') }}">About this Project</a> |
+        <a href="https://broadswordsolutions.com/wp-content/uploads/2011/03/CMMI-DEV_v1.3.pdf" target="_blank">CMMI for
+          Development Version 1.3</a>
+      </p>
+    </div>
+  </footer>
 </div>
 {% endblock %}

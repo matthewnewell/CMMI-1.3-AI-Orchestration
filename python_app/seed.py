@@ -25,7 +25,7 @@ def run_seeds():
         db.create_all()
 
         print("Reading seeds.rb...")
-        with open('../db/seeds.rb', 'r', encoding='utf-8') as f:
+        with open('../ruby_rails_app/db/seeds.rb', 'r', encoding='utf-8') as f:
             content = f.read()
 
         # Define patterns for each model

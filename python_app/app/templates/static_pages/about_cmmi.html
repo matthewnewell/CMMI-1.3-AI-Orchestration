@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+<div class="jumbotron">
+    <h1>About CMMI</h1>
+    <p>explore the structures of the Capability Maturity Model Integration (CMMI).</p>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Maturity Levels</h2>
+        <p>Explore the 5 maturity levels of the CMMI staging.</p>
+        <p><a class="btn btn-default" href="{{ url_for('main.maturity_levels') }}" role="button">View Maturity Levels
+                &raquo;</a></p>
+    </div>
+    <div class="col-md-6">
+        <h2>Process Areas</h2>
+        <p>Dive into the specific Process Areas defined in the model.</p>
+        <p><a class="btn btn-default" href="{{ url_for('main.process_areas') }}" role="button">View Process Areas
+                &raquo;</a></p>
+    </div>
+</div>
+{% endblock %}

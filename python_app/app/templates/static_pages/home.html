@@ -2,23 +2,20 @@
 
 {% block app_content %}
 <div class="jumbotron">
-    <h1>CMMI V1.3 AI Orchestration</h1>
-    <p>Welcome to the Python/Flask implementation of the CMMI Maturity Model.</p>
-    <p><a class="btn btn-primary btn-lg" href="{{ url_for('main.introduction') }}" role="button">Learn more</a></p>
+    <h1>CMMI AI Orchestrator</h1>
+    <p>Orchestrate AI agents to develop better products and services.</p>
 </div>
 
 <div class="row">
-    <div class="col-md-4">
-        <h2>Vision</h2>
-        <p>From static compliance to dynamic, AI-driven process execution.</p>
+    <div class="col-md-6">
+        <h2>About the CMMI</h2>
+        <p>Explore the Capability Maturity Model Integration framework.</p>
+        <p><a class="btn btn-default" href="{{ url_for('main.about_cmmi') }}" role="button">Learn More &raquo;</a></p>
     </div>
-    <div class="col-md-4">
-        <h2>Process Areas</h2>
-        <p>Explore the full suite of CMMI Process Areas.</p>
-    </div>
-    <div class="col-md-4">
-        <h2>Agents</h2>
-        <p>Guided by specialized AI Agents for every process.</p>
+    <div class="col-md-6">
+        <h2>AI Orchestration</h2>
+        <p>See how AI agents are orchestrated to support process improvement.</p>
+        <!-- Link to agents or similar in future -->
     </div>
 </div>
 {% endblock %}
